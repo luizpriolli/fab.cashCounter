@@ -5,5 +5,18 @@
     <application
         android:usesCleartextTraffic="true"
         tools:targetApi="28"
-        tools:ignore="GoogleAppIndexingWarning"/>
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- Adicione esta parte dentro da tag da aplicação -->
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" 
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            tools:replace="android:configChanges"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Intent filter here if you have one -->
+        </activity>
+        
+
+    </application>
 </manifest>
